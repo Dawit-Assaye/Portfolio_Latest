@@ -1,17 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
-import { navLinksdata } from '../../constants';
+import { FaGithub, FaTelegram, FaLinkedinIn } from "react-icons/fa";
+import { bannerImg } from "../../assets/index";
+import { navLinksdata } from "../../constants";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu]=useState(false)
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
-        <img src={logo} alt="logo" />
+      <div className="flex flex-row items-center">
+        <img
+          className="w-24 h-26 rounded-3xl pb-4"
+          src={bannerImg}
+          alt="bannerImg"
+        />
+        <h1 className="font-bold text-3xl">Dawit</h1>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -43,11 +48,11 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
+                <img className="w-32" src={bannerImg} alt="bannerImg" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                  I'm a versatile full stack developer skilled in both front-end
+                  and back-end technologies. Explore my projects showcasing
+                  seamless user experiences and robust web applications.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -75,15 +80,30 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
+                  <a
+                    href="https://github.com/Dawit-Assaye"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bannerIcon"
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/dawit-assaye-2712b323a/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bannerIcon"
+                  >
                     <FaLinkedinIn />
-                  </span>
+                  </a>
+                  <a
+                    href="https://t.me/DawitAssaye"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bannerIcon"
+                  >
+                    <FaTelegram />
+                  </a>
                 </div>
               </div>
               <span
@@ -98,6 +118,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

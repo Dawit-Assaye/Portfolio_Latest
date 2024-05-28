@@ -1,42 +1,46 @@
-import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe} from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { TbServerCog } from "react-icons/tb";
+import { FaGlobe,FaDatabase } from "react-icons/fa";
+import { SiAntdesign } from "react-icons/si";
+import { AiFillApi } from "react-icons/ai";
+import { RiSpeedUpFill } from "react-icons/ri";
+
 
 // Features Data
 export const featuresData = [
   {
     id: 1,
-    title: "Business Stratagy",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <SiAntdesign />,
+    title: "Full Stack Projects",
+    des: "Develop robust and scalable cross-platform mobile backends, ensuring seamless functionality across various platforms.",
   },
   {
     id: 2,
-    icon: <AiFillAppstore />,
-    title: "App Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <AiFillApi />,
+    title: "API Development & Integration",
+    des: "I showcased my expertise in API development and integration, ensuring seamless communication between systems and enhancing overall functionality.",
   },
   {
     id: 3,
-    icon: <SiProgress />,
-    title: "SEO Optimisation",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <TbServerCog />,
+    title: "Cross-Platform Mobile Backend",
+    des: "Develop robust and scalable cross-platform mobile backends, ensuring seamless functionality across various mobile platforms.",
   },
   {
     id: 4,
-    icon: <FaMobile />,
-    title: "Mobile Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaDatabase />,
+    title: "Database Management",
+    des: "Managed databases with expertise, ensuring optimal performance, security, and scalability for seamless data handling and retrieval.",
   },
   {
     id: 5,
-    icon: <SiAntdesign />,
-    title: "UX Design",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaGlobe />,
+    title: "Responsive Web Design",
+    des: "I excelled in creating responsive web designs, ensuring seamless and visually appealing user experiences across all devices and screen sizes.",
   },
   {
     id: 6,
-    icon: <FaGlobe />,
-    title: "Hosting Websites",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <RiSpeedUpFill />,
+    title: "Performance Optimization",
+    des: "I optimized performance to ensure fast, efficient, and reliable application functionality across all platforms.",
   },
 ];

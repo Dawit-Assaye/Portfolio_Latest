@@ -1,7 +1,7 @@
-import React from 'react'
-import Title from '../layouts/Title'
+import React from "react";
+import Title from "../layouts/Title";
 import { projectOne, projectTwo, projectThree } from "../../assets/index";
-import ProjectsCard from './ProjectsCard';
+import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   return (
@@ -17,44 +17,29 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Kegeberew Collective Housing Development Service"
+          des="This project is to register and group home demanders these who are willing to build their homes together, I engaged as a front end developer"
           src={projectOne}
+          gitUrl="#"
+          webUrl="https://tibibirbet.purposeblacketh.com/"
         />
         <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Kegeberew Agriculture Process Tracking"
+          des="A pioneering online platform transforming farm management for individuals and companies. I led backend development, system design, and team leadership, ensuring intuitive interfaces for remote farm management and efficient crop lifecycle tracking."
           src={projectTwo}
+          gitUrl="#"
+          webUrl="https://kapt.purposeblacketh.com/"
         />
         <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Equb Web App"
+          des="As a full stack developer, I spearheaded the development of a web application automating Ethiopia's traditional Equb saving and lottery system for my final year project. The goal was to create a transparent and accessible platform, revolutionizing community members' access to financial resources. This project holds the potential to make a significant impact on Ethiopia's economy and serves as a testament to my problem-solving skills and innovation."
           src={projectThree}
-        />
-        <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
-        />
-        <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectOne}
-        />
-        <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectTwo}
+          gitUrl="https://github.com/Dawit-Assaye/EQUB.git"
+          webUrl="#"
         />
       </div>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects;
